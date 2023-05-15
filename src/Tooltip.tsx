@@ -9,10 +9,6 @@ import {
   useInteractions
 } from "@floating-ui/react";
 
-import failOnConsole from "jest-fail-on-console";
-
-failOnConsole();
-
 type TooltipProps = {
   text: JSX.Element | string;
   placement?: Placement;
@@ -47,7 +43,7 @@ export const Tooltip = ({
     move: false
   });
   const { getReferenceProps, getFloatingProps } = useInteractions([hover]);
-
+  
   return (
     <div>
       {cloneElement(children, {

@@ -3,7 +3,9 @@ import { act, render, screen, waitFor } from "@testing-library/react";
 import { Tooltip } from "./Tooltip";
 import userEvent from "@testing-library/user-event";
 
+import failOnConsole from "jest-fail-on-console";
 
+failOnConsole();
 
 
 // eslint-disable-next-line testing-library/no-unnecessary-act
