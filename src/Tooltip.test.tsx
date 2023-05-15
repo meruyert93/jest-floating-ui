@@ -31,9 +31,7 @@ describe("Tooltip", () => {
     
     })
     
- 
     await waitForFloating();
-
     await waitFor(() => {
       expect(screen.getByText("tooltip")).toBeInTheDocument();
     });
